@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 // 
 const connection = async()=>{
     try{
-        const db = await mongoose.connect('mongodb://127.0.0.1:27017/atg');
+        const db = await mongoose.connect('mongodb+srv://zishan:zishan@cluster0.qf3xyvd.mongodb.net/');
     }catch(error){
-        console.log("error in connetion to mongoDB",err);
+        console.log("error in connetion to mongoDB",error);
     }
 }
 
